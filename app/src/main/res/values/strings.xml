@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TLUContact</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_of_don_vi">Name of Don Vi</string>
+    <string name="address_of_don_vi">Address of Don Vi</string>
+    <string name="todo">TODO</string>
+    <string name="name_of_giang_vien">Name of Giang Vien</string>
+    <string name="address_of_giang_vien">Address of Giang Vien</string>
+    <string name="dbdv">DBDV</string>
+    <string name="cbgv">CBGV</string>
+    <string name="danh_ba_don_vi">Danh Bạ Đơn Vị</string>
+</resources>
