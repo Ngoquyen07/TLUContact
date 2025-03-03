@@ -1,6 +1,7 @@
 package com.example.tlucontact;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -28,6 +29,15 @@ public class CBGVAdapter extends RecyclerView.Adapter<CBGVAdapter.CBGVViewHolder
             tvGVAddress = itemView.findViewById(R.id.tvGVAddress);
             itemView.setOnClickListener(v ->{
                 CBGV cbgv = (CBGV) v.getTag();
+                Intent intent = new Intent(v.getContext(), CBGVActivity.class);
+                intent.putExtra("NAME", cbgv.getName());
+                intent.putExtra("EMAIL", cbgv.getEmail());
+                intent.putExtra("PHONE", cbgv.getPhoneNumber());
+                intent.putExtra("POSITION", cbgv.getPosition());
+                intent.putExtra("WORD_UNIT", cbgv.getWordUnit());
+                intent.putExtra("AVATAR", cbgv.getAvatarImage());
+
+                v.getContext().startActivity(intent);
             });
         }
     }

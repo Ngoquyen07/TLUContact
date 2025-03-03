@@ -1,10 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/layout_dbdv"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DBDVActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_dbdv"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2196F3"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="@string/danh_b_n_v"
+        android:titleTextColor="#FFFFFF"
+        app:navigationIcon="@android:drawable/ic_menu_revert" />
+
+    <!-- Ảnh đại diện -->
+    <ImageView
+        android:id="@+id/img_avatar_dbdv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/computer" />
+
+    <!-- Tên đơn vị -->
+    <TextView
+        android:id="@+id/txt_name_dbdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="5dp"
+        android:padding="8dp"
+        android:text="@string/t_n_n_v"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Địa chỉ -->
+    <TextView
+        android:id="@+id/txt_address_dbdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="5dp"
+        android:padding="8dp"
+        android:text="@string/a_ch"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <!-- Số điện thoại -->
+    <TextView
+        android:id="@+id/txt_phone_dbdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="5dp"
+        android:padding="8dp"
+        android:text="@string/s_i_n_tho_i"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+</LinearLayout>

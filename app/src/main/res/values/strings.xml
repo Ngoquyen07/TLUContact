@@ -10,4 +10,14 @@
     <string name="dbdv">DBDV</string>
     <string name="cbgv">CBGV</string>
     <string name="danh_ba_don_vi">Danh Bạ Đơn Vị</string>
+    <string name="tlucontact">TLUContact</string>
+    <string name="h_v_t_n">Họ và tên</string>
+    <string name="ch_c_v">Chức vụ</string>
+    <string name="n_v_c_ng_t_c">Đơn vị công tác</string>
+    <string name="email">Email</string>
+    <string name="s_i_n_tho_i">Số điện thoại</string>
+    <string name="c_n_b_gi_ng_vi_n">Cán Bộ Giảng Viên</string>
+    <string name="t_n_n_v">Tên đơn vị:</string>
+    <string name="a_ch">Địa chỉ:</string>
+    <string name="danh_b_n_v">Danh bạ đơn vị</string>
 </resources>

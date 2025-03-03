@@ -1,6 +1,7 @@
 package com.example.tlucontact;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -27,6 +28,13 @@ public class DBDVAdapter extends RecyclerView.Adapter<DBDVAdapter.DBDVViewHolder
             tvDVAddress = itemView.findViewById(R.id.tvDVAddress);
             itemView.setOnClickListener(v ->{
                 DBDV dbdv = (DBDV) v.getTag();
+                Intent intent = new Intent(v.getContext(), DBDVActivity.class);
+                intent.putExtra("NAME", dbdv.getName());
+                intent.putExtra("ADDRESS", dbdv.getAddress());
+                intent.putExtra("PHONE", dbdv.getPhoneNumber());
+                intent.putExtra("AVATAR", dbdv.getSymbolImage());
+                v.getContext().startActivity(intent);
+
             });
         }
     }
