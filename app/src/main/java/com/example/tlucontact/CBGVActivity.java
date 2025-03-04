@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
+// nhận dữ liệu từ Item đươch chọn và gửi lên Activity
 public class CBGVActivity extends AppCompatActivity {
 
     @Override

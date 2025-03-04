@@ -24,12 +24,13 @@ public class MainActivity   extends AppCompatActivity  implements  ButtonFragmen
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        //tạo toolbar cho mainactivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
     }
-
+    // triển khai interface Btnclick để xử lý sự kiện click ; giúp hiển thị fragment đuocjw chọn
     @Override
     public void onBtnclick(int fragmentId) {
         Fragment fragment = null;

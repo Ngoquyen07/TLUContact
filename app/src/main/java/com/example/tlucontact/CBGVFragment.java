@@ -61,7 +61,7 @@ public class CBGVFragment extends Fragment {
         cbgvs.add(new CBGV(R.drawable.male, "email9@example.com", "GV009", "Dương Văn I", "0967890123", "Giáo viên", "Đại học Thủy Lợi"));
         cbgvs.add(new CBGV(R.drawable.female, "email10@example.com", "GV010", "Vũ Thị K", "0978901234", "Giáo viên", "Đại học Thủy Lợi"));
         foundcbgv = new ArrayList<>(cbgvs);
-        adapter = new CBGVAdapter(getContext(), foundcbgv);
+        adapter = new CBGVAdapter(foundcbgv);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
         cbgvSearchViewModel.getSearchCBGV().observe(getViewLifecycleOwner(), query -> {

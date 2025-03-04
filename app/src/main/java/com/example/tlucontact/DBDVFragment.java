@@ -54,7 +54,7 @@ public class DBDVFragment extends Fragment {
         dbdvs.add(new DBDV("Đại học Thủy Lợi", "DV04", "Tài nguyên nước", "0912345678", R.drawable.water));
         dbdvs.add(new DBDV("Đại học Thủy Lợi", "DV05", "Xây dựng", "0923456789", R.drawable.xaydung));
         founddbdvs = new ArrayList<>(dbdvs);
-        adapter = new DBDVAdapter(getContext(),founddbdvs);
+        adapter = new DBDVAdapter(founddbdvs);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
         dbdvSearchViewModel.getSearchDBDV().observe(getViewLifecycleOwner(), query -> {
