@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Cardview hiển thị thông tin đơn vị-->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cvDBDV"
@@ -13,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
-
+<!--        Hien thị biểu tượng đơn vị-->
         <ImageView
             android:id="@+id/ivDVSymbol"
             android:layout_width="0dp"
@@ -30,7 +31,7 @@
             android:layout_weight="5"
             android:orientation="vertical">
 
-
+<!--            Tên đơn vị-->
             <TextView
                 android:id="@+id/tvDVName"
                 android:layout_width="match_parent"
@@ -40,6 +41,7 @@
                 android:text="@string/name_of_don_vi"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+<!--            ID:-->
             <TextView
                 android:id="@+id/tvDVId"
                 android:layout_width="match_parent"
@@ -49,7 +51,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/darker_gray"/>
-
+<!--            Địa chỉ đơn vị-->
             <TextView
                 android:id="@+id/tvDVAddress"
                 android:layout_width="match_parent"

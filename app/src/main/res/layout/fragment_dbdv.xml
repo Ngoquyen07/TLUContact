@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Fragment chứa danh sách Đơn vị-->
 <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -6,7 +7,5 @@
     android:id="@+id/rvDBDV"
     android:background="#E01111"
     tools:context=".DBDVFragment">
-
-
 
 </androidx.recyclerview.widget.RecyclerView>

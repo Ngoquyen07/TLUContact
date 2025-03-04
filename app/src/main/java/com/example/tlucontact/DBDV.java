@@ -1,5 +1,6 @@
 package com.example.tlucontact;
 
+//Lớp đơn vị với các thuộc tính : Mã , Tên , Số điện thoại , Địa chỉ , Hình ảnh.
 public class DBDV {
     private String Id, Name , PhoneNumber , Address;
     private int SymbolImage;

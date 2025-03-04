@@ -1,5 +1,6 @@
 package com.example.tlucontact;
 
+// Lớp giảng viên với các thuộc tính : Mã , Tên , Chức vụ , Số điện thoại , Email , Tên đơn vị , Hình ảnh.
 public class CBGV {
     private String Id, Name , Position , PhoneNumber,Email , WordUnit;
     private int AvatarImage;
