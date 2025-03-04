@@ -1,14 +1,15 @@
 package com.example.tlucontact;
 
 public class DBDV {
-    private String Name , PhoneNumber , Address;
+    private String Id, Name , PhoneNumber , Address;
     private int SymbolImage;
 
     public DBDV() {
     }
 
-    public DBDV(String address, String name, String phoneNumber, int symbolImage) {
+    public DBDV(String address, String id, String name, String phoneNumber, int symbolImage) {
         Address = address;
+        Id = id;
         Name = name;
         PhoneNumber = phoneNumber;
         SymbolImage = symbolImage;
@@ -20,6 +21,14 @@ public class DBDV {
 
     public void setAddress(String address) {
         Address = address;
+    }
+
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String id) {
+        Id = id;
     }
 
     public String getName() {

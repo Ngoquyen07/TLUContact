@@ -25,6 +25,7 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/male" />
 
@@ -40,6 +41,19 @@
         android:text="@string/h_v_t_n"
         android:textColor="#000000"
         android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- ID -->
+    <TextView
+        android:id="@+id/txt_id_cbgv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="5dp"
+        android:padding="8dp"
+        android:text="@string/id_gv01"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <!-- Chức vụ -->

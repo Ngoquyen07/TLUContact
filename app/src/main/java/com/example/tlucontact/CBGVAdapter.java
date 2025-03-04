@@ -20,16 +20,19 @@ public class CBGVAdapter extends RecyclerView.Adapter<CBGVAdapter.CBGVViewHolder
 
     static public class CBGVViewHolder extends RecyclerView.ViewHolder{
         ImageView ivGVAvatar;
+        TextView tvGVId;
         TextView tvGVName;
         TextView tvGVAddress;
         public CBGVViewHolder(View itemView){
             super(itemView);
             ivGVAvatar = itemView.findViewById(R.id.ivGVAvatar);
+            tvGVId = itemView.findViewById(R.id.tvGVId);
             tvGVName = itemView.findViewById(R.id.tvGVName);
             tvGVAddress = itemView.findViewById(R.id.tvGVAddress);
             itemView.setOnClickListener(v ->{
                 CBGV cbgv = (CBGV) v.getTag();
                 Intent intent = new Intent(v.getContext(), CBGVActivity.class);
+                intent.putExtra("ID", cbgv.getId());
                 intent.putExtra("NAME", cbgv.getName());
                 intent.putExtra("EMAIL", cbgv.getEmail());
                 intent.putExtra("PHONE", cbgv.getPhoneNumber());
@@ -54,6 +57,7 @@ public class CBGVAdapter extends RecyclerView.Adapter<CBGVAdapter.CBGVViewHolder
         holder.itemView.setTag(cbgvs.get(position));
         CBGV cbgv = cbgvs.get(position);
         holder.ivGVAvatar.setImageResource(cbgv.getAvatarImage());
+        holder.tvGVId.setText(cbgv.getId());
         holder.tvGVName.setText(cbgv.getName());
         holder.tvGVAddress.setText(cbgv.getEmail());
     }

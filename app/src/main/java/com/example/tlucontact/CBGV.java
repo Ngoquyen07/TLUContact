@@ -1,14 +1,15 @@
 package com.example.tlucontact;
 
 public class CBGV {
-    private String Name , Position , PhoneNumber,Email , WordUnit;
+    private String Id, Name , Position , PhoneNumber,Email , WordUnit;
     private int AvatarImage;
     public CBGV() {
     }
 
-    public CBGV(int avatarImage, String email, String name, String phoneNumber, String position, String wordUnit) {
+    public CBGV(int avatarImage, String email, String id, String name, String phoneNumber, String position, String wordUnit) {
         AvatarImage = avatarImage;
         Email = email;
+        Id = id;
         Name = name;
         PhoneNumber = phoneNumber;
         Position = position;
@@ -29,6 +30,14 @@ public class CBGV {
 
     public void setEmail(String email) {
         Email = email;
+    }
+
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String id) {
+        Id = id;
     }
 
     public String getName() {

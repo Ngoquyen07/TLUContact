@@ -20,4 +20,9 @@
     <string name="t_n_n_v">Tên đơn vị:</string>
     <string name="a_ch">Địa chỉ:</string>
     <string name="danh_b_n_v">Danh bạ đơn vị</string>
+    <string name="t_m_ki_m">Tìm kiếm ...</string>
+    <string name="t_m_ki_m2">Lọc</string>
+    <string name="icon">↺</string>
+    <string name="id_gv01">ID: GV01</string>
+    <string name="id_dv001">ID: DV001</string>
 </resources>

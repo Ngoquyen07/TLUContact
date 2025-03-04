@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class DBDVActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +22,7 @@ public class DBDVActivity extends AppCompatActivity {
             getSupportActionBar().setTitle("Danh bạ đơn vị"); // Đặt tiêu đề
         }
 
+        TextView tvId = findViewById(R.id.txt_id_dbdv);
         ImageView ivAvatar = findViewById(R.id.img_avatar_dbdv);
         TextView tvName = findViewById(R.id.txt_name_dbdv);
         TextView tvAddress = findViewById(R.id.txt_address_dbdv);
@@ -30,6 +30,7 @@ public class DBDVActivity extends AppCompatActivity {
 
         // Nhận dữ liệu từ Intent
         Intent intent = getIntent();
+        String id = intent.getStringExtra("ID");
         String name = intent.getStringExtra("NAME");
         String address = intent.getStringExtra("ADDRESS");
         String phone = intent.getStringExtra("PHONE");
@@ -37,6 +38,7 @@ public class DBDVActivity extends AppCompatActivity {
 
         // Hiển thị dữ liệu
         ivAvatar.setImageResource(avatar);
+        tvId.setText("ID: " + id);
         tvName.setText("Tên đơn vị: " + name);
         tvAddress.setText("Địa chỉ: " + address);
         tvPhone.setText("Số điện thoại: " + phone);

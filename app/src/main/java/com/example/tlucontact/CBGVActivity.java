@@ -26,6 +26,7 @@ public class CBGVActivity extends AppCompatActivity {
 
         // Ánh xạ các thành phần UI
         ImageView ivAvatar = findViewById(R.id.img_avatar_cbgv);
+        TextView tvId = findViewById(R.id.txt_id_cbgv);
         TextView tvName = findViewById(R.id.txt_name_cbgv);
         TextView tvPosition = findViewById(R.id.txt_position_cbgv);
         TextView tvWorkUnit = findViewById(R.id.txt_work_unit_cbgv);
@@ -34,6 +35,7 @@ public class CBGVActivity extends AppCompatActivity {
 
         // Nhận dữ liệu từ Intent
         Intent intent = getIntent();
+        String id = intent.getStringExtra("ID");
         String name = intent.getStringExtra("NAME");
         String email = intent.getStringExtra("EMAIL");
         String phone = intent.getStringExtra("PHONE");
@@ -43,6 +45,7 @@ public class CBGVActivity extends AppCompatActivity {
 
         // Hiển thị dữ liệu lên giao diện
         ivAvatar.setImageResource(avatar);
+        tvId.setText("ID: " + id);
         tvName.setText("Họ và tên: " + name);
         tvPosition.setText("Chức vụ: " + position);
         tvWorkUnit.setText("Đơn vị công tác: " + workUnit);

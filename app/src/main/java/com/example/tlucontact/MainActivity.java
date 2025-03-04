@@ -10,8 +10,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 
-public class MainActivity extends AppCompatActivity  implements  ButtonFragment.Btnclick{
+public class MainActivity   extends AppCompatActivity  implements  ButtonFragment.Btnclick{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity  implements  ButtonFragment.
         });
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
     }
 
@@ -42,5 +44,6 @@ public class MainActivity extends AppCompatActivity  implements  ButtonFragment.
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.MainFragment, fragment);
         transaction.commit();
+
     }
 }
